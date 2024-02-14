@@ -1,11 +1,11 @@
 # JupyterGenesis
 
-Welcome to **JupyterGenesis** – your quickest route to launching a fully-prepared Jupyter environment for Python development. Optimized for simplicity and ease of use, **JupyterGenesis** provides dedicated scripts to set up your Python development environment with Jupyter Lab, tailored for macOS, Linux, and Windows.
+Your quickest route to launching a fully-prepared Jupyter environment for Python development. Optimized for simplicity and ease of use, **JupyterGenesis** provides dedicated scripts to set up your Python development environment with Jupyter Lab, tailored for macOS, Linux, and Windows.
 
 ## Supported Operating Systems
 
-- **macOS**
-- **Linux**
+- **macOS** (Bash)
+- **Linux** (Bash)
 - **Windows** (PowerShell script)
 
 ## Prerequisites
