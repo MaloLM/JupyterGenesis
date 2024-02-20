@@ -1,11 +1,10 @@
 # JupyterGenesis
 
-Your quickest route to launching a fully-prepared Jupyter environment for Python development. Optimized for simplicity and ease of use, **JupyterGenesis** provides dedicated scripts to set up your Python development environment with Jupyter Lab, tailored for macOS, Linux, and Windows.
+Your quickest route to launching a fully-prepared Jupyter environment for Python development. Optimized for simplicity and ease of use, **JupyterGenesis** provides dedicated scripts to set up your Python development environment with Jupyter Lab, tailored for macOS and Windows.
 
 ## Supported Operating Systems
 
 - **macOS** (Bash)
-- **Linux** (Bash)
 - **Windows** (PowerShell script)
 
 ## Prerequisites
@@ -13,7 +12,7 @@ Your quickest route to launching a fully-prepared Jupyter environment for Python
 Before you begin, ensure you have Python 3.6 or later installed on your system. Python needs to be added to your system's PATH to ensure the scripts can invoke the Python interpreter.
 
 - For **Windows**, Python can be installed from the [official website](https://www.python.org) or via package managers like [Chocolatey](https://chocolatey.org).
-- **macOS** and **Linux** users can install Python using their respective package managers (such as [Homebrew](https://brew.sh) for macOS or apt for Linux), or by downloading it from the [Python website](https://www.python.org) .
+- **macOS** users can install Python using their respective package managers (such as [Homebrew](https://brew.sh) for macOS), or by downloading it from the [Python website](https://www.python.org) .
 
 ## Installation
 
@@ -28,12 +27,10 @@ Before you begin, ensure you have Python 3.6 or later installed on your system. 
 
 2. **Prepare the Script**
 
-   - **macOS/Linux**: Make the script executable. For macOS and Linux users, navigate to the cloned directory and run:
+   - **macOS**: Make the script executable. For macOS users, navigate to the cloned directory and run:
 
      ```sh
      chmod +x _start-jupyter-macos.sh
-     # or
-     chmod +x _start-jupyter-linux.sh
      ```
 
    - **Windows**: Ensure that your system's execution policy allows running scripts. Open PowerShell as Administrator and run:
@@ -48,12 +45,10 @@ Before you begin, ensure you have Python 3.6 or later installed on your system. 
 
    Execute the dedicated script for your OS.
 
-   - **macOS/Linux**:
+   - **macOS**:
 
      ```sh
      ./_start-jupyter-macos.sh
-     # or
-     ./_start-jupyter-linux.sh
      ```
 
      Or simply double click the script.
@@ -75,7 +70,7 @@ Before you begin, ensure you have Python 3.6 or later installed on your system. 
 
 The setup scripts prepare a Python virtual environment, install all required packages (in requirements.txt), including Jupyter Lab and finally start the jupyterlab server. If you wish to use the virtual environment without starting the Jupyter server, you can activate the environment manually (after one script execution):
 
-- **macOS/Linux**:
+- **macOS**:
 
   Open a terminal and navigate to the project directory. Activate the virtual environment by running:
 
@@ -91,11 +86,11 @@ The setup scripts prepare a Python virtual environment, install all required pac
   .\python-dev-env\Scripts\Activate.ps1
   ```
 
-To deactivate the virtual environment and return to your system's global Python environment, you can simply run the command `deactivate` in your terminal (macOS/Linux) or PowerShell (Windows).
+To deactivate the virtual environment and return to your system's global Python environment, you can simply run the command `deactivate` in your terminal (macOS) or PowerShell (Windows).
 
 ## Customizing Script Icons
 
-For those who wish to personalize the script icons to either a Python or Jupyter logo, detailed instructions are available to guide you through the process on macOS, Linux, and Windows.
+For those who wish to personalize the script icons to either a Python or Jupyter logo, detailed instructions are available to guide you through the process on macOS and Windows.
 
 Please refer to the [Custom Icon Guide](CUSTOM_ICON.md) for step-by-step instructions on how to customize your script icons using the assets provided in the `/icons` directory of this repository.
 
