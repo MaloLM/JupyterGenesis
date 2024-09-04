@@ -24,12 +24,12 @@ if [ "$CURRENT_PYTHON" != "$EXPECTED_PYTHON" ]; then
     exit 1
 fi 
 
+# If the script reaches this point, it can assume that the correct virtual environment is active and proceed with its operations.
+
 # Reading package names from requirements.txt
-REQUIREMENTS_FILE="$(dirname "$0")/requirements.txt"
+REQ_FILE="$(dirname "$0")/requirements.txt"
 
-echo $REQUIREMENTS_FILE
-
-if [ ! -f "$REQUIREMENTS_FILE" ]; then
+if [ ! -f "$REQ_FILE" ]; then
     echo "requirements.txt file not found. Exiting."
     exit 1
 fi
@@ -44,11 +44,17 @@ INSTALLED_PACKAGES=$(pip list --format=freeze)
 while IFS= read -r PACKAGE || [[ -n "$PACKAGE" ]]; do
     if echo "$INSTALLED_PACKAGES" | grep -q "^$PACKAGE=="; then
         echo "$PACKAGE is already installed."
+        echo ''
+        echo ''
+        echo ''
     else
         echo "$PACKAGE is not installed. Installing..."
         pip install "$PACKAGE"
+        echo ''
+        echo ''
+        echo ''
     fi
-done < "$REQUIREMENTS_FILE"
+done < "$REQ_FILE"
 
 echo "--- starting jupyter lab"
-jupyter lab --NotebookApp.max_mem_rate=0.3 --NotebookApp.token='dev' --notebook-dir="$(dirname "$0")/.."
+jupyter lab --NotebookApp.iopub_data_rate_limit=1e10 --NotebookApp.token='dev' --notebook-dir="$(dirname "$0")/.."
