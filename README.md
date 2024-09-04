@@ -2,6 +2,8 @@
 
 Your quickest route to launching a fully-prepared Jupyter environment for Python development. Optimized for simplicity and ease of use, **JupyterGenesis** provides dedicated scripts to set up your Python development environment with Jupyter Lab, tailored for macOS, Linux, and Windows.
 
+![software launching demo gif](./docs/launching_demo.gif)
+
 ## Supported Operating Systems
 
 - **macOS** (Bash)
@@ -97,7 +99,7 @@ To deactivate the virtual environment and return to your system's global Python 
 
 For those who wish to personalize the script icons to either a Python or Jupyter logo, detailed instructions are available to guide you through the process on macOS, Linux, and Windows.
 
-Please refer to the [Custom Icon Guide](CUSTOM_ICON.md) for step-by-step instructions on how to customize your script icons using the assets provided in the `/icons` directory of this repository.
+Please refer to the [Custom Icon Guide](/docs/CUSTOM_ICON.md) for step-by-step instructions on how to customize your script icons using the assets provided in the `/icons` directory of this repository.
 
 ## Contributing
 
